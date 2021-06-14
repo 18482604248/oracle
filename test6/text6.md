@@ -161,7 +161,7 @@ CREATE TABLESPACE user_2 logging DATAFILE 'D:\orcale19c\oradata\ORCL\user_2.dbf'
 CREATE TABLESPACE train logging DATAFILE 'D:\orcale19c\oradata\ORCL\train.dbf' size 64m autoextend on next 65m maxsize 10240m extent management local;
 ```
 
-![](https://github.com/18482604248/oracle/blob/main/test6/img/tablespace.png)
+![img/tablespace.png](img/tablespace.png)
 
 创建表：
 
@@ -190,7 +190,7 @@ maxextents unlimited
 );                                    
 ```
 
-![](img/admin.png)
+![img/admin.png](img/admin.png)
 
 ```sql
 -- consumer表的创建
@@ -219,7 +219,7 @@ maxextents unlimited
 );
 ```
 
-![](img/consumer.png)
+![img/consumer.png](img/consumer.png)
 
 ```sql
 -- station表的创建
@@ -242,7 +242,7 @@ maxextents unlimited
 );
 ```
 
-![](img/station.png)
+![img/station.png](img/station.png)
 
 ```sql
 -- orders表的创建
@@ -270,7 +270,7 @@ maxextents unlimited
 );
 ```
 
-![](img/orders.png)
+![img/orders.png](img/orders.png)
 
 ```sql
 -- numbers表的创建
@@ -297,7 +297,7 @@ maxextents unlimited
 );  
 ```
 
-![](img/numbers.png)
+![img/numbers.png](img/numbers.png)
 
 ```sql
 -- seat表的创建
@@ -320,7 +320,7 @@ maxextents unlimited
 );  
 ```
 
-![](img/seat.png)
+![img/seat.png](img/seat.png)
 
 ```sql
 -- ticket表的创建
@@ -343,7 +343,7 @@ maxextents unlimited
 );   
 ```
 
-![](img/ticket.png)
+![img/ticket.png](img/ticket.png)
 
 插入数据：
 
@@ -385,7 +385,7 @@ end;
 /       
 ```
 
-![](img/insert_a.png)
+![img/insert_a.png](img/insert_a.png)
 
 ```sql
 -- consumer表数据插入20000
@@ -421,7 +421,7 @@ end;
 /
 ```
 
-![](img/insert_c.png)
+![img/insert_c.png](img/insert_c.png)
 
 ```sql
 -- station表的数据插入20000
@@ -445,7 +445,7 @@ end;
 /
 ```
 
-![](img/insert_s.png)
+![img/insert_s.png](img/insert_s.png)
 
 ```sql
 -- orders表的数据插入10000
@@ -491,7 +491,7 @@ end;
 /
 ```
 
-![](img/insert_o.png)
+![img/insert_o.png](img/insert_o.png)
 
 ```sql
 -- numbers表的数据插入10000
@@ -547,7 +547,7 @@ end;
 /
 ```
 
-![](img/insert_n.png)
+![img/insert_n.png](img/insert_n.png)
 
 ```sql
 -- seat表的数据的插入10000条
@@ -571,7 +571,7 @@ end;
 /
 ```
 
-![](img/insert_se.png)
+![img/insert_se.png](img/insert_se.png)
 
 ```sql
 -- ticket表的数据插入10000条
@@ -595,7 +595,7 @@ end;
 / 
 ```
 
-![](img/insert_t.png)
+![img/insert_t.png](img/insert_t.png)
 
 ```sql
 -- 查询是否插入成功
@@ -608,7 +608,7 @@ select count(*) from seat;
 select count(*) from ticket;
 ```
 
-![](img/result.png)
+![img/result.png](img/result.png)
 
 ## 5.设计权限及用户分配方案,两类角色，两个用户
 
@@ -658,9 +658,9 @@ GRANT  t_user TO  consumer;
 
 成功截图如下：
 
-![](img/role.png)
+![img/role.png](img/role.png)
 
-![](img/role2.png)
+![img/role2.png](img/role2.png)
 
 ## 6.在数据库中建立一个程序包，在包中用PL/SQL语言设计一些存储过程和函数，实现比较复杂的业务逻辑，用模拟数据进行执行计划分析
 
@@ -753,7 +753,7 @@ create user wjl identified by 520 default tablespace bp quota unlimited on bp;
 grant connect,resource,recovery_catalog_owner to wjl;
 ```
 
-![](img/storage.png)
+![img/storage.png](img/storage.png)
 
 ### 7.2连接RMAN恢复目录数据库
 
@@ -772,7 +772,7 @@ rman catalog wjl/520 target /
 register database;
 ```
 
-![](img/rman.png)
+![img/rman.png](img/rman.png)
 
 ### 7.3通道分配
 
@@ -789,7 +789,7 @@ allocate channel td3 device type disk;
 show all;
 ```
 
-![](img/td.png)
+![img/td.png](img/td.png)
 
 ### 7.4归档模式下备份与恢复
 
