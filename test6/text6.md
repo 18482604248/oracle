@@ -161,7 +161,7 @@ CREATE TABLESPACE user_2 logging DATAFILE 'D:\orcale19c\oradata\ORCL\user_2.dbf'
 CREATE TABLESPACE train logging DATAFILE 'D:\orcale19c\oradata\ORCL\train.dbf' size 64m autoextend on next 65m maxsize 10240m extent management local;
 ```
 
-![](https://github.com/18482604248/oracle/blob/main/test6/img/tablespace.png)
+![](img/tablespace.png)
 
 创建表：
 
